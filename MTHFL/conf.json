@@ -1,0 +1,45 @@
+
+{
+	"Server_agg_epochs" : 1,
+
+	"server_num" : 4,
+	"server_train_epochs" : 3,
+
+
+	"rsu_num" : 5,
+	"evil_rsu_num" : 0,
+	"rsu_agg_epochs" : 1,
+
+	"client_num" : 5,
+	"evil_client_num" : 10,
+	"client_train_epochs" : 1,
+
+	"DataSets_nameSample":"cifar, mnist",
+	"dataset_name" : "mnist",
+
+	"model_nameSample":" fc,resnet18",
+	"model_name" : "fc",
+
+	"agg_methods":"trim, fedAvg,rohfl,flTrust, mthfl, PartFedAvg,flame,fine_agg",
+	"global_agg" : "fedAvg",
+	"server_agg" : "fine_agg",
+	"rsu_agg" : "fedAvg",
+
+	"pruning": "True",
+
+	"attacks" : "labelflip, MPAF, lie, trim_attack,backdoor,backdoor_pruning",
+	"attack_name" : "backdoor_pruning",
+
+	"backdoor_data_pollution_rate" : 0.1,
+
+	"global_epochs" : 100,
+
+	"iid result" : "True , False",
+	"iid": "True",
+
+	"batch_size" : 32,
+
+	"lr" : 0.001,
+
+	"momentum" : 0.001
+}
